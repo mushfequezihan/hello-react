@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let city = {
+    name:"Madrid",
+    country:"spain"
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+   <h1 id="heading" className="cool-text">
+       {city.name} is in {city.country}
+       </h1>,
+    document.getElementById('root'));
+
+
